@@ -203,6 +203,8 @@ function addToCart(i) {
 
   if (cartArr.includes(phones[i]) === true) {
     console.log('bhai item mujood h');
+    cartArr[i].quantity+= 1;
+    console.log(cartArr);
   }
   else {
     phones[i].quantity = 1
